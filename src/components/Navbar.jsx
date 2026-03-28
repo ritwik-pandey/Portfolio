@@ -4,15 +4,14 @@ import dayjs from "dayjs";
 import React from "react";
 
 const Navbar = () => {
-    const {openWindow} = useWindowStore();
+    const { openWindow } = useWindowStore();
 
     return (
         <nav>
             <div>
-                <img src="/images/logo.svg" alt="logo" />
-                <p className="font-bold">Ritwik's Portfolio</p>
+                <p>Activities</p>
                 <ul>
-                    {navLinks.map(({id, name, type}) => (
+                    {navLinks.map(({ id, name, type }) => (
                         <li key={id} onClick={() => openWindow(type)}>
                             <p>{name}</p>
                         </li>
@@ -20,18 +19,24 @@ const Navbar = () => {
                 </ul>
             </div>
 
+            <time>{dayjs().format("MMM D  H:mm")}</time>
+
             <div>
-                <ul>
-                    {navIcons.map(({id ,img}) => (
-                        <li key ={id} >
-                            <img src={img} alt={`icon-${id}`} className="icon-hover" />
+                <ul className="flex items-center gap-3">
+                    {navIcons.map(({ id, img }) => (
+                        <li key={id} >
+                            <img src={img} alt={`icon-${id}`} className="icon opacity-80" />
                         </li>
                     ))}
                 </ul>
-                <time>{dayjs().format("ddd MMM D h:mm A")}</time>
+                <div className="flex items-center gap-1 hover:bg-white/10 px-2 py-0.5 rounded cursor-default">
+                    <img src="/icons/wifi.svg" className="size-4 invert" alt="wifi" />
+                    <img src="/icons/user.svg" className="size-4 invert" alt="user" />
+                    <img src="/icons/mode.svg" className="size-4 invert" alt="settings" />
+                </div>
             </div>
         </nav>
-        
+
     );
 }
 

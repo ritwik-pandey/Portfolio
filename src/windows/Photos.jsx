@@ -8,23 +8,23 @@ const Photos = () => {
     const { openWindow } = useWindowStore();
 
     return (
-        <div className="bg-white h-full flex flex-col">
+        <div className="h-full flex flex-col">
             <div id="window-header">
                 <WindowControls target="photos" />
 
-                <div className="w-full flex justify-end items-center gap-3 text-gray-500">
+                <div className="w-full flex justify-end items-center gap-3 text-gray-400">
                     <Mail className="icon" />
                     <Search className="icon" />
                 </div>
             </div>
 
             <div className="flex w-full flex-1 overflow-hidden">
-                <div className="sidebar w-48 bg-gray-50 border-r border-gray-200 p-4">
+                <div className="sidebar w-48 p-4">
                     <h2 className="text-xl font-bold mb-4">Photos</h2>
 
                     <ul>
                         {photosLinks.map(({ id, icon, title }) => (
-                            <li key={id} className="flex items-center gap-2 p-2 hover:bg-gray-200 rounded-lg cursor-pointer">
+                            <li key={id} className="flex items-center gap-2 p-2 hover:bg-white/10 text-gray-200 rounded-lg cursor-pointer">
                                 <img src={icon} alt={title} className="w-5 h-5" />
                                 <p className="text-sm">{title}</p>
                             </li>

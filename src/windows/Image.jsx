@@ -11,7 +11,7 @@ const Image = () => {
     const { name, imageUrl } = data;
 
     return (
-        <div className="bg-white h-full flex flex-col">
+        <div className="h-full flex flex-col">
             <div id="window-header">
                 <WindowControls target="imgfile" />
                 <p className="font-bold text-[#5f6266] uppercase text-xs tracking-widest">{name}</p>

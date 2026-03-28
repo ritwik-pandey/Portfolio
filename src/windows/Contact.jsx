@@ -11,10 +11,9 @@ const Contact = () => {
         </div>
 
         <div className="p-5 space-y-5">
-            <img src="/images/adrian.jpg" alt="Ritwik" className="w-20 rounded-full"/>
 
             <h3>Let's Connect</h3>
-            <p>I will write something cool here</p>
+            <p>Eager to learn and collaborate</p>
 
             <ul>
                 {socials.map(({id,bg,link,icon,text}) => (
