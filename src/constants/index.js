@@ -224,7 +224,7 @@ const WORK_LOCATION = {
       name: "PostNet Website Application",
       icon: "/images/files.png",
       kind: "folder",
-      position: "top-10 left-5", // icon position inside Finder
+      position: "top-5 left-5", // icon position inside Finder
       windowPosition: "top-[5vh] left-20", // optional: Finder window position
       children: [
         {
@@ -248,7 +248,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://github.com/ritwik-pandey/postnet",
-          position: "top-10 right-20",
+          position: "top-5 left-35",
         }
         // {
         //   id: 4,
@@ -277,7 +277,7 @@ const WORK_LOCATION = {
       name: "Let's Leet",
       icon: "/images/files.png",
       kind: "folder",
-      position: "top-52 right-80",
+      position: "top-5 left-35",
       windowPosition: "top-[22vh] left-20",
       children: [
         {
@@ -286,7 +286,7 @@ const WORK_LOCATION = {
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
-          position: "top-5 right-10",
+          position: "top-5 left-10",
           description: [
             "A Chrome extension designed to enhance LeetCode problem-solving by integrating real-time insights and peer solution comparisons.",
             "Enables users to analyze multiple approaches to the same problem, improving algorithmic thinking and optimization skills.",
@@ -301,7 +301,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://github.com/ritwik-pandey/leetcode-extension",
-          position: "top-20 left-20",
+          position: "top-5 left-35",
         },
         // {
         //   id: 4,
@@ -330,7 +330,7 @@ const WORK_LOCATION = {
       name: "Globe Quest",
       icon: "/images/files.png",
       kind: "folder",
-      position: "top-10 left-80",
+      position: "top-5 left-65",
       windowPosition: "top-[38vh] left-20",
       children: [
         {
@@ -354,7 +354,7 @@ const WORK_LOCATION = {
           kind: "file",
           fileType: "url",
           href: "https://github.com/ritwik-pandey/globequest",
-          position: "top-10 right-20",
+          position: "top-5 left-35",
         }
 
       ],
@@ -402,7 +402,7 @@ const ABOUT_LOCATION = {
       icon: "/images/txt.png",
       kind: "file",
       fileType: "txt",
-      position: "top-60 left-5",
+      position: "top-5 left-5",
       subtitle: "About Me!",
 
       description: [
